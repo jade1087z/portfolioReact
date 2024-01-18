@@ -1,68 +1,79 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import {
+    handleMouseOver,
+    handleMouseOut,
+    list,
+    CommonLink,
+} from "./util/headerData/eventHandle";
+import { profile, site, useStack } from "./util/footerData/list";
 
 const Footer = () => {
+    const [activeLink, setActiveLink] = useState(null);
+
     return (
         <div id="footer">
             <div className="title">
                 <div className="t1">contact</div>
                 <div className="t2">danziro97@naver.com</div>
                 <div className="list">
-                    {/*<ul>
+                    <ul>
                         <li>
-                            <strong>site</strong>
+                            <strong>siteMap</strong>
                         </li>
-                        <li></li>
-                        <li>
-                            <Link to={"#"}>codepen</Link>
-                        </li>
-                        <li>
-                            <Link to={"#"}>blog</Link>
-                        </li>
-                     </ul>*/}
+                        {list.map((li, key) => (
+                            <li key={key}>
+                                <CommonLink
+                                    to={li.link}
+                                    offset={0}
+                                    handleMouseOver={handleMouseOver}
+                                    handleMouseOut={handleMouseOut}
+                                    setActiveLink={setActiveLink}
+                                    linkKey={key}
+                                    style={{
+                                        color:
+                                            activeLink === key
+                                                ? "#22242a"
+                                                : activeLink !== null
+                                                ? "#22242a57"
+                                                : "#22242a",
+                                    }}
+                                >
+                                    {li.name}
+                                </CommonLink>
+                            </li>
+                        ))}
+                    </ul>
                     <ul>
                         <li>
                             <strong>useStack</strong>
                         </li>
-                        <li>
-                            <Link to={"#"}>Javascript</Link>
-                        </li>
-                        <li>
-                            <Link to={"#"}>node.js</Link>
-                        </li>
-                        <li>
-                            <Link to={"#"}>react.js</Link>
-                        </li>
+                        {useStack.map((stac, key) => (
+                            <li key={key}>
+                                <Link>{stac}</Link>
+                            </li>
+                        ))}
                     </ul>
                     <ul>
                         <li>
                             <strong>site</strong>
                         </li>
-                        <li>
-                            <Link to={"https://github.com/jade1087z"}>
-                                github
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to={"#"}>react</Link>
-                        </li>
-                        <li>
-                            <Link to={"#"}>node</Link>
-                        </li>
-                        <li>
-                            <Link to={"#"}>php</Link>
-                        </li>
+                        <li></li>
+                        {site.map((site, key) => (
+                            <li key={key}>
+                                <Link to={site.link}>{site.value}</Link>
+                            </li>
+                        ))}
                     </ul>
                     <ul>
                         <li>
                             <strong>profile</strong>
                         </li>
-                        <li>
-                            <Link to={"#"}>임종한</Link>
-                        </li>
-                        <li>
-                            <Link to={"#"}>010.7180.2384</Link>
-                        </li>
+                        {profile.map((pro, key) => (
+                            <li key={key}>
+                                <Link>{pro}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className="address">

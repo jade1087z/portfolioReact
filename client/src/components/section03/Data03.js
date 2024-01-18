@@ -4,8 +4,8 @@ import pro03 from "../../assets/img/proj03.png";
 
 const Data03 = [
     {
-        subTitle: "게시판 사이트 제작",
-        img: pro01,
+        subTitle: "CJJD-취중진담",
+        img: pro02,
         h4: ["Crafted a PHP", "based community", "platform."],
         descLink: "Community Site Link",
         mainP: "DB와 SQL 기본 지식을 토대로 서버와 클라이언트 통신을 구현했습니다. RESTFULL API와 데이터베이스를 직접 설계를 해보며 웹사이트 개발의 전체적인 흐름을 익히는데 많은 도움이 되었습니다.",
@@ -13,8 +13,8 @@ const Data03 = [
         gitLink: "https://github.com/jade1087z/php__CJJD.git",
     },
     {
-        subTitle: "유튜브 사이트 제작",
-        img: pro02,
+        subTitle: "Fession YouTube",
+        img: pro01,
         h4: ["Built a React", "YouTube Clone on", "Digital Stage."],
         descLink: "YouTube Clone Link",
         mainP: "유튜브 API를 불러와 클론 사이트를 제작했습니다. React 그리고, API에 대해 경험 할 수 있는 기회였습니다. React Hook, Redux, Props의 이해를 위한 첫 발걸음이 되었습니다.",
@@ -22,7 +22,7 @@ const Data03 = [
         gitLink: "https://github.com/jade1087z/reactyoutube.git",
     },
     {
-        subTitle: "다이어리 사이트 제작",
+        subTitle: "Kican-diary",
         img: pro03,
         h4: ["Engineered a diary", "site with React.js", "and Node.js."],
         descLink: "Diary Site Link",
