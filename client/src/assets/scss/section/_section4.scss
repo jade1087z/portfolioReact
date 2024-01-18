@@ -1,0 +1,162 @@
+#section4 {
+    padding: 20% 0 10%;
+
+    .title {
+        font-family: "GmarketSans";
+        text-align: left;
+        font-size: 8vw;
+        line-height: 1.05;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-bottom: 10%;
+        padding: 0 0 0 2.5%;
+        position: relative;
+
+        .t1 {
+            padding-left: 14vw;
+        }
+        .sec4__title {
+            position: relative;
+            padding-bottom: 30px;
+        }
+        .lineMask.ab {
+            @include lineMask-ab;
+        }
+        .img {
+            width: 12vw;
+            height: 6.6vw;
+            background-image: url(https://source.unsplash.com/500x500/?color);
+            background-size: cover;
+            background-position: center;
+            display: block;
+            // position: absolute;
+            // left: 0.6vw;
+            // top: 0vw;
+            border-radius: 10px;
+            background-color: #000;
+        }
+        .lineMask.d1 {
+            position: absolute;
+            // top: 103%;
+            bottom: -20px;
+        }
+
+        .lineMask.d2 {
+            position: absolute;
+            bottom: -50px;
+        }
+
+        .desc {
+            font-family: "IropkeBatang";
+            line-height: 1.6;
+            font-size: 1rem;
+            color: #202020;
+            font-weight: normal;
+            padding-left: 0.5vw;
+        }
+
+        .desc.d1 {
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+    }
+}
+
+.about-wrap {
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .left {
+        width: 50%;
+        padding-bottom: 60%;
+        background-image: url(../../img/me.jpg);
+        height: 1082px;
+        background-size: cover;
+        background-position: center center;
+        position: sticky;
+        position: -webkit-sticky;
+        left: 0px;
+        top: 100px;
+        border-radius: 10px;
+    }
+
+    .right {
+        width: 45%;
+
+        dl {
+        }
+
+        dt {
+            font-family: "Josefin Slab";
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        dd {
+            font-family: "IropkeBatang";
+            margin-bottom: 50px;
+            line-height: 1.7;
+        }
+        .link {
+            a {
+                font-weight: bold;
+                position: relative;
+                padding-bottom: 5px;
+                @include link-hover;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    #section4 {
+        .lineMask.d2 {
+            bottom: -70px !important;
+        }
+    }
+}
+@media (max-width: 700px) {
+    #section4 {
+        padding: 120px 2px 50px 20px;
+
+        .title {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+
+            .t1 {
+            }
+            .desc {
+                display: none !important;
+            }
+            .img {
+                left: -5vw;
+            }
+        }
+
+        .about-wrap {
+            flex-direction: column;
+            .left {
+                width: 100%;
+                position: static;
+                height: 800px;
+            }
+            .right {
+                width: 100%;
+                dl {
+                    &:nth-child(1) {
+                        margin-top: 30px;
+                    }
+                    dt {
+                        margin-bottom: 10px;
+                    }
+                    dd {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

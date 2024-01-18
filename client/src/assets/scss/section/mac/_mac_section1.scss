@@ -1,0 +1,140 @@
+.window.mac {
+    #header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 10000;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 20px 50px;
+
+        .left {
+            display: flex;
+            align-items: flex-end;
+
+            span {
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 10px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            h1 {
+                font-family: Josefin Slab;
+                text-transform: uppercase;
+                padding-right: 3vw;
+                margin-bottom: -5px;
+                font-size: 30px;
+            }
+
+            p {
+                font-family: GmarketSans;
+                font-weight: 100;
+                margin-bottom: 2px;
+            }
+        }
+
+        .right {
+            ul {
+                display: flex;
+
+                li {
+                    a {
+                        font-family: GmarketSans;
+                        font-weight: 500;
+                        display: inline-block;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    #section1 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 150px 50px 50px;
+
+        .sec1__text {
+            font-family: "GmarketSans";
+            text-align: left;
+            font-size: 9vw;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 900;
+            position: relative;
+
+            .img {
+                width: 12vw;
+                height: 7.4vw;
+                background-image: url(https://source.unsplash.com/500x500/?water);
+                background-size: cover;
+                background-position: center;
+                display: block;
+                position: absolute;
+                left: 0.6vw;
+                top: 0.6vw;
+                border-radius: 10px;
+            }
+
+            > div:nth-of-type(1) {
+                padding-left: 13vw;
+            }
+        }
+
+        .sec1__intro {
+            font-family: "IropkeBatang";
+            line-height: 1.6;
+        }
+    }
+    @media (max-width: 1000px) {
+        #header {
+            .left {
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media (max-width: 700px) {
+        #header {
+            padding: 20px 20px;
+
+            .right {
+                display: none;
+            }
+        }
+
+        #section1 {
+            padding: 120px 2px 50px 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            br {
+                display: none;
+            }
+
+            .sec1__text {
+                text-align: center;
+            }
+
+            .sec1__intro {
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}

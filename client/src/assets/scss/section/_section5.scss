@@ -1,0 +1,112 @@
+#section5 {
+    padding: 15% 0 10%;
+
+    .title {
+        font-family: "GmarketSans";
+        text-align: left;
+        font-size: 8vw;
+        line-height: 1.1;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-bottom: 10%;
+        padding: 0 0 0 2.5%;
+
+        .sec5__title {
+            position: relative;
+            padding-bottom: 30px;
+        }
+        .t1 {
+            padding-left: 14vw;
+        }
+        .lineMask.ab {
+            @include lineMask-ab-sec5;
+        }
+        .img {
+            width: 12vw;
+            height: 6.6vw;
+            background-image: url(https://source.unsplash.com/500x500/?color);
+            background-size: cover;
+            background-position: center;
+            display: block;
+            position: absolute;
+            top: 0vw;
+            border-radius: 10px;
+        }
+        .lineMask.d1 {
+            position: absolute;
+            // top: 100%;
+            bottom: 0px;
+        }
+
+        .lineMask.d2 {
+            position: absolute;
+            // top: 107%;
+        }
+        .desc2 {
+            font-family: "IropkeBatang";
+            line-height: 1.6;
+            font-size: 16px;
+            color: #202020;
+            font-weight: normal;
+            padding-top: 0;
+        }
+    }
+}
+
+// swiper 참조
+.comment__wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.comment__input {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+    input,
+    button {
+        padding: 3px 10px;
+        margin-right: 3px;
+    }
+}
+
+@media (max-width: 900px) {
+    #section5 {
+        .comment__input {
+            flex-direction: column !important;
+            .commentWrap.bottom {
+                margin-top: 5px !important;
+                input {
+                }
+                button {
+                }
+            }
+            input,
+            button {
+                margin-right: 3px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #section5 {
+        padding: 120px 0px 50px 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .title {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 100px;
+
+            .desc2 {
+                display: none !important;
+            }
+        }
+    }
+}

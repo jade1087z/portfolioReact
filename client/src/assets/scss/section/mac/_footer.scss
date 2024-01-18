@@ -1,0 +1,80 @@
+.window.mac {
+    #footer {
+        padding: 20% 0 10%;
+
+        .title {
+            font-family: "GmarketSans";
+            text-align: left;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 900;
+            position: relative;
+            margin-bottom: 7%;
+            padding: 0 5%;
+
+            .t1 {
+                padding-left: 0;
+                font-size: 8vw;
+            }
+
+            .t2 {
+                text-align: right;
+                font-size: 4vw;
+                line-height: 1.3;
+                font-family: "GmarketSans";
+                font-weight: 100;
+                text-transform: capitalize;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                padding: 50px 0;
+                margin-top: 50px;
+            }
+
+            ul {
+                text-align: right;
+                margin-top: 30px;
+            }
+
+            li {
+                a {
+                    font-size: 20px;
+                    line-height: 1.4;
+                    font-family: "GmarketSans";
+                    font-weight: 400;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                strong {
+                    font-size: 14px;
+                    font-weight: 700;
+                    opacity: 0.5;
+                    margin-bottom: 15px;
+                    display: inline-block;
+                    font-family: "Josefin Slab";
+                }
+            }
+
+            .list {
+                display: flex;
+                justify-content: flex-end;
+
+                ul {
+                    margin-left: 100px;
+                }
+            }
+
+            .address {
+                text-align: right;
+                margin-top: 100px;
+
+                p {
+                    font-family: "IropkeBatang";
+                    color: #9d9d9d;
+                    font-size: 14px;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}

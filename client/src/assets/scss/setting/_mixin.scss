@@ -1,0 +1,55 @@
+@mixin link-hover {
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: var(--desc-color);
+        height: 1px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 103%;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    &:hover {
+        &::before {
+            transform: scaleX(0);
+            transform-origin: right;
+            transition-delay: 0s;
+        }
+
+        &::after {
+            transform: scaleX(0);
+            transform-origin: right;
+            transition-delay: 0.1s;
+        }
+    }
+}
+
+@mixin lineMask-ab-sec1 {
+    overflow: hidden;
+    width: 13vw;
+    height: 7.5vw;
+    position: absolute;
+    top: 0.2vw;
+    left: 0vw;
+}
+@mixin lineMask-ab {
+    overflow: hidden;
+    width: 13vw;
+    height: 6.6vw;
+    position: absolute;
+    top: 0.2vw;
+    left: 0.6vw;
+}
+@mixin lineMask-ab-sec5 {
+    overflow: hidden;
+    width: 13vw;
+    height: 6.6vw;
+    position: absolute;
+    top: 0.2vw;
+    left: 0.3vw;
+}

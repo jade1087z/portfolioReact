@@ -1,0 +1,102 @@
+#section5 {
+    padding: 20% 0 10%;
+
+    .title {
+        font-family: "GmarketSans";
+        text-align: left;
+        font-size: 8vw;
+        line-height: 1;
+        text-transform: uppercase;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: 7%;
+        padding: 0 5%;
+
+        .t1 {
+            padding-left: 14vw;
+        }
+
+        .img {
+            width: 12vw;
+            height: 6.6vw;
+            background-image: url(https://source.unsplash.com/500x500/?color);
+            background-size: cover;
+            background-position: center;
+            display: block;
+            position: absolute;
+            left: 5.5%;
+            top: 0.6vw;
+            border-radius: 10px;
+            background-color: #000;
+        }
+
+        .desc,
+        .desc2 {
+            font-family: "IropkeBatang";
+            line-height: 1.6;
+            font-size: 16px;
+            color: #202020;
+            font-weight: normal;
+            padding-left: 0.5vw;
+        }
+
+        .desc {
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+
+        .desc2 {
+            padding-top: 30px;
+        }
+    }
+}
+
+.comment__wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.comment__inner {
+    display: flex;
+    width: 3000px;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    .comment {
+        width: 300px;
+        border: 1px solid #61616136;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: "IropkeBatang";
+
+        .author {
+            margin-bottom: 10px;
+        }
+
+        em {
+            text-decoration: underline;
+            text-underline-position: under;
+            margin-bottom: 10px;
+        }
+
+        span {
+            opacity: 0.5;
+        }
+    }
+
+    &:nth-child(2) {
+        margin-left: -200px;
+    }
+}
+
+.comment__input {
+    text-align: center;
+    padding: 50px;
+
+    input,
+    button {
+        border: 1px solid #ccc;
+        font-family: "IropkeBatang";
+        padding: 3px 10px;
+    }
+}

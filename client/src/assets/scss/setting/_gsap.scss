@@ -1,0 +1,23 @@
+.HIDDEN {
+    overflow: hidden;
+}
+.HIDDEN.title {
+}
+
+.NUMHIDDEN {
+    overflow: hidden;
+    margin-top: -5.5vw;
+}
+
+.RELATIVEHIDDEN {
+    position: absolute;
+    overflow: hidden;
+    top: 9%;
+    left: 2.3%;
+    width: 100px;
+}
+
+@media (max-width: 800px) {
+    .HIDDEN {
+    }
+}
