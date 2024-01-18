@@ -1,0 +1,8 @@
+/server/server/node_modules
+/server/server/package-lock.json
+/server/server/config/dev.js
+
+/server/client/node_modules
+/server/client/package-lock.json
+
+.DB_Store
