@@ -3,7 +3,7 @@ const path = require("path");
 // 데이터베이스
 const mongoose = require("mongoose");
 const app = express();
-const port = 5050;
+const port = process.env.PORT || 5050;
 
 // DB, Firebase, navercloud key
 const config = require("./server/config/key.js");
