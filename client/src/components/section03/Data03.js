@@ -4,6 +4,15 @@ import pro03 from "../../assets/img/proj03.png";
 
 const Data03 = [
     {
+        subTitle: "CJJD-UPGRADE",
+        img: pro02,
+        h4: ["Crafted a PHP", "based community", "platform."],
+        descLink: "Community Site Link",
+        mainP: "기존 프로젝트를 NODE.JS와 REACT.JS 환경으로 리팩토링하며, REACT-QUERY, TYPESCRIPT를 적용했습니다..",
+        siteLink: "#",
+        gitLink: "https://github.com/jade1087z/cjjd_upgrade.git",
+    },
+    {
         subTitle: "CJJD-취중진담",
         img: pro02,
         h4: ["Crafted a PHP", "based community", "platform."],

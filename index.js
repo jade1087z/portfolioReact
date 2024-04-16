@@ -27,9 +27,9 @@ app.listen(port, () => {
         });
 });
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile(path.join("/home/ubuntu/portfolioReact/client/build/index.html"));
 });
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile(path.join("/home/ubuntu/portfolioReact/client/build/index.html"));
 });
